@@ -1,12 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>hello world</h1>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background-color: whitesmoke;
+      }
+      #header {
+        width: 1100px;
+        margin: auto;
+      }
+      #header-img {
+        width: 400px;
+        padding-top: 20px;
+      }
+      .nav-link {
+        display: inline;
+        text-decoration: none;
+        color: black;
+        margin: 30px;
+      }
+      #nav-bar {
+        display: flex;
+        float: right;
+      }
+      #h2 {
+        text-align: center;
+      }
+      input {
+        display: block;
+        margin: 0 auto;
+        width: 270px;
+        height: 20px;
+      }
+      #first-btn {
+        display: block;
+        margin: 0 auto;
+        width: 180px;
+        height: 30px;
+        background-color: orange;
+        border: none;
+        font-weight: bolder;
+        font-size: 20px;
+      }
+      table {
+        width: 900px;
+        margin: auto;
+      }
+      .fa {
+        color: orange;
+      }
+      .table-h2 {
+        text-align: left;
+      }
+      td {
+        padding: 25px;
+      }
+      video {
+        width: 550px;
+        height: 270px;
+        margin: auto;
+        display: block;
+      }
+      #pricing {
+        margin: auto;
+        display: flex;
+        width: 900px;
+      }
+      .level {
+        font-size: 26px;
+        text-align: center;
+      }
+      .price {
+        text-align: center;
+      }
+      .product {
+        padding: 30px;
+        margin: 20px;
+        border: thin solid black;
+      }
+      ol {
+        list-style: none;
+      }
+      .btn {
+        display: block;
+        margin: 0 auto;
+        background-color: orange;
+        font-size: larger;
+        border: none;
+        width: 100px;
+        height: 35px;
+      }
+      footer {
+        width: 900px;
+        margin: auto;
+        background-color: lightgray;
+        height: 100px;
+
+      }
+      ul {
+        text-align: right;
+        padding: 20px;
+        padding-bottom: 0px;
+      }
+      ul li {
+        list-style: none;
+        display: inline;
+      }
+      ul li a {
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+      }
+      #span {
+        text-align: right;
+        padding-bottom: 10px;
+        padding-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <img
+        id="header-img"
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+        alt=""
+      />
+      <nav id="nav-bar">
+        <a class="nav-link" href="">Features</a>
+        <a class="nav-link" href="">How it works</a>
+        <a class="nav-link" href="">Pricing</a>
+      </nav>
+    </header>
+    <div>
+      <h2 id="h2">Handcrafted, home-made masterpieces</h2>
+      <input type="email" placeholder="Enter your email address" />
+      <br />
+      <button id="first-btn">Get started</button>
+    </div>
+    <table>
+      <tr>
+        <td><i class="fa fa-fire fa-3x"></i></td>
+        <td>
+          <h2 class="table-h2">Premium Materials</h2>
+          <p>
+            Our trombones use the shiniest brass which is sourced locally. This
+            will increase the longevity of your purchase.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><i class="fa fa-truck fa-3x"></i></td>
+        <td>
+          <h2 class="table-h2">Fast Shipping</h2>
+          <p>
+            We make sure you recieve your trombone as soon as we have finished
+            making it. We also provide free returns if you are not satisfied.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td><i class="fa fa-battery fa-3x"></i></td>
+        <td>
+          <h2 class="table-h2">Quality Assurance</h2>
+          <p>
+            For every purchase you make, we will ensure there are no damages or
+            faults and we will check and test the pitch of your instrument.
+          </p>
+        </td>
+      </tr>
+    </table>
+    <div>
+        <video width="320" height="240" controls>
+            <source src="https://www.youtube.com/watch?v=f9ip1iSAptQ" type="video/mp4" controls>
+            
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <section id="pricing">
+        <div class="product" id="tenor">
+          <div class="level">Tenor Trombone</div>
+          <h2 class="price">$600</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="bass">
+          <div class="level">Bass Trombone</div>
+          <h2 class="price">$900</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="valve">
+          <div class="level">Valve Trombone</div>
+          <h2 class="price">$1200</h2>
+          <ol>
+            <li>Plays similar to a Trumpet</li>
+            <li>Great for Jazz Bands</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div id="span">Copyright 2016, Original Trombones</div>
+      </footer>
+  </body>
 </html>
